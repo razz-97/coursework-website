@@ -1,4 +1,4 @@
-@import 'https://fonts.google.com/specimen/Alegreya+Sans';
+@import 'https://fonts.googleapis.com/css?family=Alegreya+Sans';
 @import 'https://fonts.googleapis.com/css?family=Raleway';
 @import 'https://fonts.googleapis.com/css?family=Oswald';
 
@@ -104,7 +104,7 @@ header {
 }
 /*logo for desktop version site*/
 #logo {
-	margin: 20px;
+	margin: 10px;
 	float: left;
 	width: 200px;
 	height: 60px;
@@ -128,11 +128,20 @@ a:hover#menu-icon {
 ul {
 	list-style-type: none;
 }
+/*
+nav ul {
+	position: fixed;
+	width: 50%;
+	display: flex;
+	justify-content: space-between;
+}
+*/
+
 /*nav items*/
 nav ul li {
 	font-family: 'Alegreya Sans', sans-serif;
 	font-size: 150%;
-	display: inline-block;
+	display: flex;
 	float: left;
 	padding: 10px;
 }
@@ -169,6 +178,7 @@ nav ul a:hover {
 #test {
 	background-color: #AADCD2;
 }
+/*------LIVE FOR SPEED START-------*/
 .inner-wrapper {
 	float: left;
 	width: 100%;
@@ -185,30 +195,62 @@ article {
 }
 aside {
 	float: right;
-	margin: 0 auto;
+	margin: auto;
 	width: 50%;
 	height: auto;
 }
 #lfs2 {
 	background-color: #A2B1C1;
 }
+/*------LIVE FOR SPEED END-------*/
+
+/*------OVERWATCH START-------*/
 #overwatch {
 	background-color: #BEB9AD;
-
 }
 .inner-wrapper-2 {
 	float: left;
 	width: 100%;
-	background-color: #C47794;
+	background-color: #BEB9AD;
 }
+/*this is to put the Overwatch image more towards the center*/
+#overwatch2 {
+	position: relative;
+}
+/*------OVERWATCH END-------*/
+
 .inner-wrapper-3 {
 	float: left;
 	width: 100%;
 	background-color: #C47794
 }
+/*Gaming Controller, Mouse and Keyboard, Computer Monitor*/
 .one-third {
 	width: 33.3333%;
 	float: left;
 	text-align: center;
-
+}
+#game-pad {
+	background-color: #A2B1C1;
+}
+#mouse-keyboard {
+	background-color: #BEB9AD;
+}
+#computer-monitor {
+	background-color: #AADCD2;
+}
+#controller-icon {
+	background-color: #AADCD2;
+	padding: 0 0 1%;
+}
+/* FOOTER START */
+footer {
+	background: #AADCD2;
+	margin-top: -2%;
+	width: 100%;
+}
+/* FOOTER END */
+.social-media {
+	list-style-type: none;
+	text-align: center;
 }
