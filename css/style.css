@@ -1,16 +1,68 @@
 @import 'https://fonts.google.com/specimen/Alegreya+Sans';
+@import 'https://fonts.googleapis.com/css?family=Raleway';
+@import 'https://fonts.googleapis.com/css?family=Oswald';
 
-* {
-	/* reset margin, padding and border*/
+html, body {
+	/* reset margin, padding*/
 	margin: 0;
 	padding: 0;
-	border: 0;
+	height: 100%;
+	width: 100%;
 }
 body {
 	background: #F5F5F5;
 	color: #67727A;
 	font-family: 'Alegreya', sans-serif;
 	margin: 0;
+}
+.intro {
+	height: 100%;
+	width: 100%;
+	margin: auto;
+	background-image: url(../img/gaming-banner.png);
+	display: table;
+	top: 0;
+	background-size: cover;
+}
+.intro .inner {
+	display: table-cell;
+	vertical-align: middle;
+	width: 100%;
+	max-width: none;
+}
+.content {
+	max-width: 500px;
+	margin: 0 auto;
+	text-align: center;
+}
+.content h1 {
+	font-family: 'Raleway', sans-serif;
+	color: #F9F3F4;
+	text-shadow: 0px 0px 300px #000;
+	font-size: 500%;
+}
+.btn {
+	border-radius: 9px;
+	font-family: 'Oswald', sans-serif;
+	color: #C41153;
+	font-size: 135%;
+	padding: 10px 20px;
+	border: solid #C41153 3px;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+.btn:hover {
+	color: #ffff00;
+	border: solid #ffff00 3px;
+}
+@media screen and (max-width: 768px) {
+	.content h1 {
+		font-size: 250%;
+	}
+	.btn {
+		font-size: 110%;
+		padding: 7px 15px;
+	}
 }
 h2 {
 	font-size: 250%;
@@ -158,5 +210,5 @@ aside {
 	width: 33.3333%;
 	float: left;
 	text-align: center;
-	
+
 }
