@@ -10,7 +10,7 @@ html, body {
 	width: 100%;
 }
 body {
-	background: #F5F5F5;
+	background: #621BF3;
 	color: #67727A;
 	font-family: 'Alegreya', sans-serif;
 	margin: 0;
@@ -23,6 +23,7 @@ body {
 	display: table;
 	top: 0;
 	background-size: cover;
+	background-position: center;
 }
 .intro .inner {
 	display: table-cell;
@@ -44,10 +45,10 @@ body {
 .btn {
 	border-radius: 9px;
 	font-family: 'Oswald', sans-serif;
-	color: #C41153;
+	color: #4cff00;
 	font-size: 135%;
 	padding: 10px 20px;
-	border: solid #C41153 3px;
+	border: solid #4cff00 3px;
 	text-transform: uppercase;
 	text-decoration: none;
 }
@@ -94,7 +95,7 @@ img {
 	margin-bottom: -4px;
 }
 header {
-	background-color: #C41153;
+	background-color: #621bf3;
 	width: 100%;
 	height: 86px;
 }
@@ -114,12 +115,12 @@ nav {
 	float: center;
 	padding: 25px 20px 0 0;
 }
-/*nav icon for mobile version*/
+/*nav icon for mobile version hidden on desktop version*/
 #menu-icon {
 	display: hidden;
 	width: 40px;
 	height: 40px;
-	background: url(..img/nav.png) center;
+	background: url(../img/nav.png) center;
 }
 /*nav icon for mobile version*/
 a:hover#menu-icon {
@@ -214,7 +215,7 @@ aside {
 	background-color: #BEB9AD;
 }
 /*this is to put the Overwatch image more towards the center*/
-#overwatch2 {
+.overwatch2 {
 	position: relative;
 }
 /*------OVERWATCH END-------*/
@@ -243,14 +244,109 @@ aside {
 	background-color: #AADCD2;
 	padding: 0 0 1%;
 }
-/* FOOTER START */
+/* SOCIAL MEDIA FOOTER START */
 footer {
-	background: #AADCD2;
+	background-color: #6991AC;
 	margin-top: -2%;
 	width: 100%;
 }
-/* FOOTER END */
-.social-media {
+.social {
 	list-style-type: none;
+	text-align: center;	
+}
+.social li {
+	display: inline;
+}
+/*social media icons*/
+.social i {
+	font-size: 460%;
+	margin: 1%;
+	padding: 5% 5% 5% 4%;
+	color: #C3D7DF;
+}
+/*social media icons in footer color and transition effect*/
+.social i:hover {
+	color: #FFFFFF;
+	transition: 0.5s;
+}
+/*SOCIAL MEDIA FOOTER END*/
+
+/*COPYRIGHT FOOTER START*/
+footer.second {
+	border-top: 1px solid #AADCD2;
+	background-color: #544B59;
 	text-align: center;
+	margin-bottom: 0%;
+}
+footer.second.p {
+	padding: 5px 0 9px 0;
+	text-align: center;
+}
+/*COPYRIGHT FOOTER END*/
+
+/*Media breakpoint for other devices such as tablets or mobiles phones*/
+@media screen and (max-width: 768px) {
+	h2 {
+		font-size: 150%;
+	}
+	h3 {
+		font-size: 125%;
+	}
+	p {
+		font-size: 120%;
+	}
+	header {
+		position: absolute;
+	}
+	#logo {
+		margin: 15px 0 20px -25px;
+		background: url(../img/logo.png) no-repeat center;
+	}
+	#menu-icon {
+		display: inline-block;
+		float: right;
+	}
+	nav ul, nav:active ul {
+		display: none;
+		z-index: 1;
+		position: absolute;
+		padding: 0px;
+		background: #6991AC;
+		margin-right: 20px;
+		margin-top: 60px;
+		border: 3px solid #FFF;
+		border-radius: 10px 0 10px 10px;
+		width: 50%;
+	}
+	nav:hover ul {
+		display: block;
+	}
+	nav li {
+		text-align: center;
+		width: 100%;
+		padding: 10px 0;
+	}
+	.one-fourth {
+		float: left;
+		width: 100%
+	}
+	.one-fourth i {
+		font-size: 350%;
+		padding: 4% 0 1% 0;
+	}
+	article {
+		width: 100%;
+	}
+	aside {
+		width: 100%;
+	}
+	.overwatch2 {
+		display: none;
+	}
+	.one-third {
+		width: 100%;
+	}
+	.social i {
+		font-size: 180%;
+	}
 }
