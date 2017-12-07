@@ -94,6 +94,15 @@ img {
 	width: auto;
 	margin-bottom: -4px;
 }
+/*image comes when mouse is hovered over text*/
+p.one:hover {
+	background-image: url('../img/controller.gif');
+	background-repeat: no-repeat;
+	background-position: center;
+	display: block;
+	transition: 1s;
+	z-index: 1;
+}
 header {
 	background-color: #621bf3;
 	width: 100%;
