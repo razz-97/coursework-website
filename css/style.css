@@ -15,66 +15,6 @@ body {
 	font-family: 'Alegreya', sans-serif;
 	margin: 0;
 }
-/*GAMES PAGE START*/
-#slider, .wrap, .slide-content {
-	margin: 0;
-	padding: 0;
-	font-family: Arial, Helvetica, sans-serif;
-	width: 100%;
-	height: 50vh; /*only use half of the page for the slider*/
-	/*overflow-x: hidden; /*reduces any horizontal scroll bars etc*/
-}
-.wrap {
-	position: relative;
-}
-.slide {
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
-}
-.slide1 {
-	background-image: url(../img/image1.jpg);
-}
-.slide2 {
-	background-image: url(../img/image2.jpg);
-}
-.slide3 {
-	background-image: url(../img/image3.jpg);
-}
-.slide-content {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	text-align: center;
-}
-.slide-content span {
-	font-size: 5rem;
-	color: white;
-}
-.arrow {
-	cursor: pointer;
-	position: absolute;
-	top: 50%;
-	margin-top: -35px;
-	width: 0;
-	height: 0;
-	border-style: solid;
-}
-#arrow-left {
-	border-width: 30px 40px 30px 0;
-	border-color: transparent #fff transparent transparent;
-	left: 0;
-	margin-left: 30px;
-}
-#arrow-right {
-	border-width: 30px 0 30px 40px;
-	border-color: transparent transparent transparent #fff;
-	right: 0;
-	margin-right: 30px;
-}
-/*GAMES PAGE END*/
-
 .intro {
 	height: 100%;
 	width: 100%;
@@ -86,6 +26,7 @@ body {
 	background-position: center;
 	position: relative;
 	z-index: 1;
+	margin-bottom: -25px;
 }
 .intro .inner {
 	display: table-cell;
@@ -172,8 +113,12 @@ header {
 	background-color: #621bf3;
 	width: 100%;
 	height: 86px;
+	z-index: 100; /*keep navigation above anything above 100 z index*/
 }
-
+/*#header-inner {
+	max-width: 1200px;
+	margin: 0 auto;
+}*/
 /*logo for desktop version site*/
 #logo {
 	margin: 15px 0 20px -25px;
@@ -182,9 +127,9 @@ header {
 	height: 60px;
 	background: url(../img/logo.png) no-repeat center;
 }
-.navigation-items {
-	display: block;
-}
+/*.navigation-items {
+	display: block; /*stop the mobile navigation to close *//* <----This was used to try and fix the issue with the navigation box collasping during mobile view but doesn't fix it in terms of position.
+}*/
 nav {
 	float: right;
 	padding: 25px 20px 0 0;
@@ -235,12 +180,6 @@ nav ul a:hover {
 	width: 33.3%;
 	float: left;
 	text-align: center;
-}
-#html {
-	background-color: #F1AA90;
-}
-#css {
-	background-color: #BEB9AD;
 }
 
 /*------LIVE FOR SPEED START-------*/
@@ -309,6 +248,7 @@ aside {
 	background-color: #AADCD2;
 	padding: 0 0 1%;
 }
+
 /* SOCIAL MEDIA FOOTER START */
 footer {
 	background-color: #6991AC;
@@ -348,6 +288,7 @@ footer.second.p {
 	text-align: center;
 }
 /*COPYRIGHT FOOTER END*/
+
 .top {
 	font-family: 'Alegreya Sans', sans-serif;
 	color: #F5F5F5;
@@ -356,6 +297,90 @@ footer.second.p {
 	text-indent: 2%;
 	text-align: justify;
 }
+
+/*---------------GAMES PAGE START---------------*/
+.gaming-page { /*white background color for Games page*/
+	background-color: #fff;
+}
+#slider, .wrap, .slide-content {
+	margin: 0;
+	padding: 0;
+	font-family: Arial, Helvetica, sans-serif;
+	width: 100%;
+	height: 50vh; /*only use half of the page for the slider*/
+	/*overflow-x: hidden; /*reduces any horizontal scroll bars etc*/
+}
+.wrap {
+	position: relative;
+}
+.slide {
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.slide1 {
+	background-image: url(../img/image1.jpg);
+}
+.slide2 {
+	background-image: url(../img/image2.jpg);
+}
+.slide3 {
+	background-image: url(../img/image3.jpg);
+}
+.slide-content {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+.slide-content span {
+	font-size: 5rem;
+	color: #621BF3;
+}
+.arrow {
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	margin-top: -35px;
+	width: 0;
+	height: 0;
+	border-style: solid;
+}
+#arrow-left {
+	border-width: 30px 40px 30px 0;
+	border-color: transparent #fff transparent transparent;
+	left: 0;
+	margin-left: 30px;
+}
+#arrow-right {
+	border-width: 30px 0 30px 40px;
+	border-color: transparent transparent transparent #fff;
+	right: 0;
+	margin-right: 30px;
+}
+
+.expanding {
+	-webkit-transition: width 0.3s ease-in-out; /*this line of code was researched using the internet*/
+	width: 120px;
+	height: 120px;
+	background-color: #363636;
+	margin-left: 15%; /*create spacing between moving boxes*/
+	display: inline-block;
+	position: relative;
+	margin-bottom: 25px;
+	margin-top: 20px;
+}
+.expanding:hover {
+	width: 300px; /*width of the box once it expands*/
+	height: 120px;
+	background-color: #363636;
+	background-image: hidden;
+}
+.box {
+	text-align: center;
+}
+/*---------------GAMES PAGE END---------------*/
 
 /*Media breakpoint for other devices such as tablets or mobiles phones*/
 @media screen and (max-width: 768px) {
@@ -376,20 +401,22 @@ footer.second.p {
 		background: url(../img/logo.png) no-repeat center;
 	}
 	#menu-icon {
-		display: inline-block;
-		float: left;
+		cursor: pointer;
+		/*display: inline-block;*/
+		float: right;
 	}
 	nav ul, nav:active ul {
-		display: none;
-		z-index: 1;
-		position: absolute;
-		padding: 10px;
+		display: none; 
+		z-index: 1; /*make the nav box come infront of image*/
+		position: relative;
+		padding: 20px;
 		background: #621bf3;
-		margin-right: 20px;
-		margin-top: 60px;
+		/*margin-right: 20px;*/
+		margin-top: 40px;
 		border: 3px solid #FFF;
-		border-radius: 10px 0 10px 10px;
-		width: 50%;
+		border-radius: 20px 10px 20px 10px;
+		width: 30%;
+		float: right;
 	}
 	nav:hover ul {
 		display: block;

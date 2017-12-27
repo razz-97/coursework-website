@@ -12,7 +12,7 @@
 
 <body>
 <a name="top"></a>
-<!--Header Start-->
+	<!--Header Start-->
 	<header>
 		<div id="header-inner">
 			<a href="index.html" id="logo"></a>
@@ -28,41 +28,21 @@
 			</nav>
 		</div>
 	</header>
-<!--Header End-->
+	<!--Header End-->
 
-<!--Banner Start-->
+	<!--Banner Start-->
 	<section class="intro">
 		<div class="inner">
 			<div class="content">
 				<h1>Welcome to Gaming</h1>
-				<a class="btn" href="#">Get Involved</a>
+				<a class="btn" href="#btn" onclick="smoothScroll(document.getElementById('btn'))">FIND OUT MORE</a>
 			</div>
 		</div>
 	</section>
-<!--Banner End-->
-
-<!--GAMES COLUMN START (Test code)->
-	<section class="one-fourth" id="html">
-		<td>
-			<i class="fa fa-html5"></i>
-			<h3>TEST Games1</h3>
-		</td>
-	</section>
-	<section class="one-fourth" id="css">
-		<td>
-			<i class="fa fa-css3"></i>
-			<h3>TEST Games2</h3>
-		</td>
-	</section>
-	<section class="one-fourth" id="test">
-		<td>
-			<i class="fa fa-css3"></i>
-			<h3>TEST Games3</h3>
-		</td>
-	</section>
-	<!-GAMES COLUMN END-->
+	<!--Banner End-->
 
 	<!--First Game-->
+	<a name="btn" id="btn"></a>
 	<section class="inner-wrapper">
 		<article id="lfs">
 			<img src="img/lfs.png" alt="lfs">
@@ -128,5 +108,7 @@
 		<p>&copy; Gamers Port 2017</p> 
 		<a class="top" href="#top">Return to the top</a>
 	</footer>
+
+	<script type="text/javascript" src="js/smooth-scroll.js"></script>
 </body>
 </html>
