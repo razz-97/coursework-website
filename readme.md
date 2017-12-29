@@ -14,7 +14,7 @@
 
 3.
 
-- [x] 24th December 2017 - user testing with a friend showed a minor css bug which caused a spacing between a image and a "<section>"" tag. This was identified during user testing and was fixed.
+- [x] 24th December 2017 - user testing with a friend showed a minor css bug which caused a spacing between a image and a "section" tag. This was identified during user testing and was fixed.
 
 
 ## Problem which were solved 
