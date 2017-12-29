@@ -32,8 +32,8 @@
 <!--Header End-->
 	
 	<div class="container">
-		<h1 class="brand">Get in touch with us today!</h1>
-		<div class="wrapper animated bounceInLeft">
+		<h1 class="brand animated bounceInLeft">Get in touch with us today. We'd love to hear from you!</h1>
+		<div class="wrapper">
 			<div class="company-info">
 				<h3>Gamers Port</h3>
 				<h4>Where are we?</h4>
@@ -44,26 +44,26 @@
 				</ul>
 			</div>
 			<div class="contact">
-				<h3>Email Us</h3>
+				<h3><u>Email Us</u></h3>
 				<form>
 					<p>
-						<label>Name</label>
+						<label>*Name:</label>
 						<input type="text" name="name">
 					</p>
 					<p>
-						<label>Company</label>
+						<label>Company:</label>
 						<input type="text" name="company">
 					</p>
 					<p>
-						<label>Email Address</label>
+						<label>*Email Address:</label>
 						<input type="email" name="email">
 					</p>
 					<p>
-						<label>Phone Number</label>
+						<label>Phone Number:</label>
 						<input type="text" name="phone">
 					</p>
 					<p class="full">
-						<label>Message</label>
+						<label>*Message:</label>
 						<textarea name="message" rows="6"></textarea>
 					</p>
 					<p class="full">
@@ -73,12 +73,6 @@
 			</div>
 		</div>
 	</div>
-
-
-
-
-
-
 
 
 
@@ -97,7 +91,16 @@
 	</div> -->
 <!--Expanding Box End-->
 
+	<!--GOOGLE API START-->
+	<h2 id="maptxt">Need to find us? Check where we're located below!</h2>
+	
+	<div id="map"></div>
 
+	<script type="text/javascript" src="js/googleapi.js"></script>
+  	<script async defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDEfkOHiLP4VvdS8xc8fy5RpMkmAOlfkRo&callback=initMap">
+    </script>
+	<!--GOOGLE API END-->
 
 	<footer>
 			<ul class="social">
@@ -113,7 +116,6 @@
 	</footer>
 
   <script type="text/javascript" src="js/script.js"></script>
-  
 
 </body>
 </html>
