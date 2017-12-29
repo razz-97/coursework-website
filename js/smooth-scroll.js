@@ -1,3 +1,4 @@
+//This code for smooth scroll was found online - link in readme file
 window.smoothScroll = function(target) {
     var scrollContainer = target;
     do { //find scroll container

@@ -47,3 +47,35 @@ arrowRight.addEventListener("click", function() {
 })    
 
 startSlide();
+
+//--------------POP-UP START--------------
+
+//gets element of popupbox
+var popupbox = document.getElementById('simpPop'); 
+//get open popupbox button
+var popupBtn = document.getElementById('popupBtn');
+
+var closeBtn = document.getElementsByClassName('closeBtn')[0]; //specifies that the first array is wanted
+
+//Look for click
+popupBtn.addEventListener('click', popOpen); //once a "click" is detected, popOpen function is called
+//look for when close "x" is clicked
+closeBtn.addEventListener('click', popClose);
+//close also by clicking outside the pop up box
+window.addEventListener('click', clickOutside)
+
+//function to open the popupbox
+function popOpen() {
+  popupbox.style.display = 'block';
+}
+
+//function to close the popupbox
+function popClose() {
+  popupbox.style.display = 'none';
+}
+//function to close the popupbox even if outside of the window is clicked
+function clickOutside(e) { //use of internet was used for this code: https://stackoverflow.com/questions/152975/how-do-i-detect-a-click-outside-an-element
+  if(e.target == popupbox) {
+      popupbox.style.display = 'none';
+  }
+}

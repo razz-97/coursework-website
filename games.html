@@ -53,6 +53,7 @@
 	</div>
 <!--Slider End-->
 
+<!--THIS CODE WAS NOT USED IN THE SITE, BUT WAS A IDEA THAT WAS USED ON A PROTOTYPE EARLIER ON THE PROJECT-->
 <!--Expanding Box Start-->
 <!-- 	<div class="expanding">
 		<p class="box">Overwatch</p>
@@ -68,7 +69,7 @@
 	</div> -->
 <!--Expanding Box End-->
 
-<!--GAMES COLUMN START (Test code)-->
+	<!--GAMES COLUMN START-->
 	<section class="one-fourth" id="ps">
 		<td>
 			<img src="img/ps.jpg" alt="playstation logo">
@@ -84,10 +85,9 @@
 			<img src="img/steam.jpg" alt="steam logo">
 		</td>
 	</section>
-
 	<!--GAMES COLUMN END-->	
 
-	<section class="v-header container"> <!--section instead of HEADER-->
+	<section class="v-header container">
 		<div class="fullscreen-video-wrap">
 			<video src="bgvideo.mp4" autoplay="true" loop="true" muted="true"></video>
 		</div>
@@ -126,7 +126,7 @@
 				<td>PC/PS4/XBOX ONE</td>
 				<td>24th May 2016</td>
 				<td>£29.99</td>
-				<td>BUTTON</td>
+				<td><button class="fakebutton">Details</td>
 			</tr>
 			<tr>
 				<td>2</td>
@@ -134,7 +134,7 @@
 				<td>PC/PS4/XBOX ONE/PS3/XBOX 360</td>
 				<td>17th September 2013</td>
 				<td>£39.99</td>
-				<td>BUTTON</td>
+				<td><button class="fakebutton">Details</td>
 			</tr>
 			<tr>
 				<td>3</td>
@@ -142,7 +142,7 @@
 				<td>PC</td>
 				<td>13th July 2003</td>
 				<td>£24.00</td>
-				<td>BUTTON</td>
+				<td><button class="fakebutton">Details</td>
 			</tr>
 			<tr>
 				<td>4</td>
@@ -150,14 +150,26 @@
 				<td>PC</td>
 				<td>19th October 2012</td>
 				<td>£24.99</td>
-				<td>BUTTON</td>
+				<td><button id="popupBtn" class="button">Details</td>
+				<div id="simpPop" class="popupbox">
+					<div class="popupbox-content">
+						<div class="popupbox-header">
+							<span class="closeBtn">&times;</span> <!--create a "x" button to close the pop up-->
+							<h2 class="pophead">Euro Truck Simulator 2</h2>
+						</div>
+						<div class="popupbox-body">
+							<img id="pop-up-img" src="img/ets2.jpg" alt="ETS2 Image">
+							<p class="popup">What is ETS2? Euro Truck Simulator, Euro Truck Simulator 2 and American Truck Simulator, as well as their sister titles, are truck simulation games created by SCS Software. Titles usually differ in the place simulated, e.g. both Euro Truck Simulator games are in Europe.</p>
+							<p class="popup">Price: £24.99</p>
+						</div>
+						<div class="popupbox-footer">
+							<button id="fakebutton1"><h2 class="pophead">Buy From Retailer</h2></button>
+						</div>
+					</div>
+				</div>	
 			</tr>
 		</table>
 	</section>
-
-
-
-
 
 <!-- 	<section class="section-a">
 		<div class="section-container">
